@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Blog</title>
+    <link rel="stylesheet" href="my_blog.css">
+
+</head>
+<body>
+    <script>
+        if (!sessionStorage.getItem('loaderShown')) {
+            window.location.href = "pageloader.html";
+        } else {
+            window.location.href = "my_blog.html";
+        }
+    </script>
+
+    <video autoplay muted loop id="background-video">
+        <source src="102250-659832349_small.mp4" type="video/mp4">
+        Your browser does not support the video element
+    </video>
+    <header>
+        
+        <nav>
+            <ul id="menu">
+
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+    <section id="posts">
+        <h2>The Lunar Explorer Posts</h2>
+        <div class="post-container">
+            <div class="post">
+                <h3>NASA, JAXA Bounce Laser Beam Between Moon’s Surface and Lunar Orbit</h3>
+                <p>Click here to read more and make sure to like our post</p>
+                <button class="like-button">Like</button>
+                <span class="likes-count">0 likes</span>
+            </div>
+            <div class="post1">
+                <h3>NASA's Podcasts</h3>
+                <p>From longform interviews with astronauts and engineers to narrative shows that take you on a tour of the galaxy, NASA’s diverse podcast portfolio lets you experience the thrill of space exploration without ever leaving Earth.Click here to learn more.</p>
+                <button class="like-button">Like</button>
+                <span class="likes-count">0 likes</span>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        
+        <h2>About Us</h2>
+        <p>Welcome to our blog. Here you will find interesting articles and posts.</p>
+    </section>
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+        <p>For any inquiries, please email us at <a href="mailto:lunarexplorer@gmail.com">explorerlunar@gmail.com</a></p>
+    </section>
+    <script src="my_blog.js"></script>
+</body>
+</html>
